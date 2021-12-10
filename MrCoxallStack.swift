@@ -18,8 +18,12 @@ class MrCoxallStack {
         stackAsArray.insert(pushNumber, at: 0)
     }
 
-    func pull() {
+    // Pops the first element in the stack
+    func pull() -> Int {
+        let removedElement = stackAsArray[0]
         stackAsArray.removeFirst(1)
+
+        return removedElement
     }
 
     // Displays the stack

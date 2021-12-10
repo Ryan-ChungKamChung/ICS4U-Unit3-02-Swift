@@ -17,16 +17,14 @@ let number2 = 42
 print("Pushing #1...")
 aStack.push(pushNumber: number1)
 aStack.showStack()
-print("")
 
-print("Pushing #2...")
+print("\nPushing #2...")
 aStack.push(pushNumber: number2)
 aStack.showStack()
-print("")
 
-print("Pulling #1...")
-aStack.pull()
+print("\nPulling...")
+let removedElement = aStack.pull()
+print("Removed: \(removedElement)")
 aStack.showStack()
-print("")
 
-print("Done.")
+print("\nDone.")
