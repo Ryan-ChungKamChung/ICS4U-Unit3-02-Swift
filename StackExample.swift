@@ -22,8 +22,8 @@ print("\nPushing #2...")
 aStack.push(pushNumber: number2)
 aStack.showStack()
 
-print("\nPulling...")
-let removedElement = aStack.pull()
+print("\nPopping...")
+let removedElement = aStack.pop()
 print("Removed: \(removedElement)")
 aStack.showStack()
 

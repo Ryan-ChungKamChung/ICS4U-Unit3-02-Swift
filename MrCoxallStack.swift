@@ -14,22 +14,13 @@ class MrCoxallStack {
     private var stackAsArray = [Int]()
 
     // Pushes a number to the stack
-    func push(pushNumber: Int) {
-        stackAsArray.insert(pushNumber, at: 0)
-    }
+    func push(pushNumber: Int) { self.stackAsArray.insert(pushNumber, at: 0) }
 
     // Pops the first element in the stack
-    func pull() -> Int {
-        let removedElement = stackAsArray[0]
-        stackAsArray.removeFirst(1)
-
-        return removedElement
-    }
+    func pop() -> Int { self.stackAsArray.removeFirst() }
 
     // Displays the stack
     func showStack() {
-        for element in stackAsArray {
-            print("\(element)")
-        }
+        self.stackAsArray.forEach { element in print("\(element)") }
     }
 }
